@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F1F5FD] flex justify-center items-center min-h-screen text-white">
+    <!-- <div class="absolute flex gap-6 z-20 top-0 right-0">
+        <div class="invisible 2xl:visible">2XL</div>
+        <div class="invisible xl:visible">XL</div>
+        <div class="invisible lg:visible">LG</div>
+        <div class="invisible md:visible">MD</div>
+        <div class="invisible sm:visible">SM</div>
+        <div>NONE</div>
+    </div> -->
+    
+    <div class="w-96 w-[600px] bg-white rounded-xl">
+
+        <!-- Header -->
+        <div class="bg-[#203673] flex justify-between rounded-t-xl p-6">
+            <h3 class="text-2xl font-medium">Book a training</h3>
+            <button class="duration-200 hover:scale-125">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Date -->
+        <div class="text-black flex items-center justify-center gap-8 mt-8">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="gray" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M15 6l-6 6l6 6"></path>
+                </svg>
+            </button>
+            <div class="flex flex-col items-center">
+                <h3 class="text-2xl font-bold">Sep. 24</h3>
+                <p class="font-bold">Today</p>
+            </div>
+            <button class="duration-200 hover:scale-125">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M9 6l6 6l-6 6"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Session section -->
+        <div class="flex flex-col items-center gap-4 py-8">
+            <div class="bg-[#203673] flex justify-between p-6 rounded-xl w-full max-w-sm duration-200 hover:scale-105">
+                <div class="flex flex-col">
+                    <h4 class="text-xl font-bold mb-2">Bodypump</h4>
+                    <p class="mb-4">09:30 • 60 min</p>
+                    <div>
+                        <small>Trained by</small>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                            </svg>
+                            <div>Emily Stark</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-white text-black px-4 py-2 rounded-md font-bold duration-500 hover:rotate-[360deg]">Book a spot</button>
+                </div>
+            </div>
+            
+            <div class="bg-[#203673] flex justify-between p-6 rounded-xl w-full max-w-sm duration-200 hover:scale-105">
+                <div class="flex flex-col">
+                    <h4 class="text-xl font-bold mb-2">Pilates</h4>
+                    <p class="mb-4">09:30 • 60 min</p>
+                    <div>
+                        <small>Trained by</small>
+                        <div class="flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                                <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                            </svg>
+                            <div>Erik Nest</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-white text-black px-4 py-2 rounded-md font-bold duration-500 hover:rotate-[360deg]">Book a spot</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+
+</html> 
