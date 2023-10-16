@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#EDEEF7] bg-[url(https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80)] bg-top bg-cover flex flex-col sm:flex-row gap-4 justify-center items-center min-h-screen">
+    <div class="absolute flex gap-6 z-20 top-0 right-0">
+        <div class="invisible 2xl:visible">2XL</div>
+        <div class="invisible xl:visible">XL</div>
+        <div class="invisible lg:visible">LG</div>
+        <div class="invisible md:visible">MD</div>
+        <div class="invisible sm:visible">SM</div>
+        <div>NONE</div>
+    </div>
+
+    <div class="bg-white/75 w-96 flex flex-col items-center p-16 rounded-2xl relative">
+
+        <div class="bg-white border rounded-full p-2 cursor-pointer absolute top-3 right-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+            </svg>
+        </div>
+
+        <h3 class="text-2xl font-medium">Enjoyed the read?</h3>
+
+        <p class="text-center">Join our monthly newsletter for helpful tips on design and more.</p>
+
+        <input type="text" name="emai" id="email" class="w-full border rounded px-4 py-2 mt-8 mb-4" placeholder="Your email address">
+
+        <div class="flex items-center gap-2">
+            <input type="checkbox" name="agree" id="agree" class="scale-125 accent-[#2E2865]">
+            <label for="agree" class="text-xs">I agree to receive this newsletter and subscribe at any time.</label>
+        </div>
+
+        <button class="w-full py-3 bg-[#2E2865] text-white mt-4 rounded shadow-[0px_10px_10px_-7px_#8481C4]">SUBSCRIBE</button>
+
+    </div>
+    
+</body>
+
+</html> 
