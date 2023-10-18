@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#112335] flex justify-center items-center min-h-screen">
+
+    <div
+        class="bg-[url(https://images.unsplash.com/photo-1572860177022-8fda92a90c95?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070)] text-white py-40 px-24 bg-cover flex flex-col justify-center items-center shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
+
+        <div class="flex flex-col justify-center items-center mb-36">
+            <h3 class="text-3xl">- countdown to -</h3>
+            <h2 class="text-6xl font-bold text-center ">HALLOWEEN</h1>
+        </div>
+
+
+        <div class="flex gap-10">
+
+            <div class="text-center bg-black/30 w-40 aspect-square">
+                <div class="text-8xl font-thin" id="days">0</div>
+                <div class="text-4xl font-thin">days</div>
+            </div>
+
+            <div class="text-center bg-black/30 w-40 aspect-square">
+                <div class="text-8xl font-thin" id="hours">0</div>
+                <div class="text-4xl font-thin">hours</div>
+            </div>
+
+            <div class="text-center bg-black/30 w-40 aspect-square">
+                <div class="text-8xl font-thin" id="minutes">0</div>
+                <div class="text-4xl font-thin">minutes</div>
+            </div>
+
+            <div class="text-center bg-black/30 w-40 aspect-square">
+                <div class="text-8xl font-thin" id="seconds">0</div>
+                <div class="text-4xl font-thin">seconds</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const targetDate = new Date("2023-10-31T00:00:00");
+            const now = new Date().getTime();
+            const remaining = targetDate - now;
+
+            if (remaining < 0) {
+                clearInterval(countdownInterval);
+                return;
+            }
+
+            const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+    </script>
+</body>
+
+</html>
