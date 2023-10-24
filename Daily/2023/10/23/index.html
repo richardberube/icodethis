@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#EDF1F4] flex flex-col justify-center items-center min-h-screen text-white relative p-12">
+    <div class="absolute flex gap-6 z-20 top-0 right-0">
+        <div class="invisible 2xl:visible">2XL</div>
+        <div class="invisible xl:visible">XL</div>
+        <div class="invisible lg:visible">LG</div>
+        <div class="invisible md:visible">MD</div>
+        <div class="invisible sm:visible">SM</div>
+        <div>NONE</div>
+    </div>
+
+    <div class="w-[500px] h-[300px] rounded-3xl overflow-hidden relative flex justify-center items-end">
+        <svg id="visual" viewBox="0 0 500 300" width="500" height="300" class="absolute -z-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <rect x="0" y="0" width="500" height="300" fill="#FBC24F"></rect>
+            <path d="M0 165L11.8 166.2C23.7 167.3 47.3 169.7 71.2 161.8C95 154 119 136 142.8 129.3C166.7 122.7 190.3 127.3 214.2 142.5C238 157.7 262 183.3 285.8 186.5C309.7 189.7 333.3 170.3 357.2 166.2C381 162 405 173 428.8 169C452.7 165 476.3 146 488.2 136.5L500 127L500 301L488.2 301C476.3 301 452.7 301 428.8 301C405 301 381 301 357.2 301C333.3 301 309.7 301 285.8 301C262 301 238 301 214.2 301C190.3 301 166.7 301 142.8 301C119 301 95 301 71.2 301C47.3 301 23.7 301 11.8 301L0 301Z" fill="#FE778E" stroke-linecap="round" stroke-linejoin="miter"></path>
+        </svg>
+        <div class="bg-white/20 w-[400px] h-[200px] flex flex-col pl-20 p-12 backdrop-blur-lg rounded-t-xl">
+            <h4 class="text-2xl font-bold">Updates</h4>
+            <p>23 in the last 7 hours</p>
+        </div>
+    </div>
+
+    <div class="bg-white w-[400px] text-black flex flex-col gap-4 items-center shadow-2xl rounded-b-xl">
+        <div class="p-6 w-3/5 rounded-xl -mt-10 ml-10 z-10 bg-white relative shadow-lg">
+            <div class="font-bold text-sm">16:30</div>
+            <div>Believing Is The Absence Of Doubt</div>
+            <div class="w-4 h-4 rounded-full bg-[#D3D6E0] absolute -left-10 top-[45%]"></div>
+            <div class="w-1 h-36 rounded-full bg-[#D3D6E0] absolute -left-[14%] top-[47%]"></div>
+        </div>
+        <div class="p-6 w-3/5 rounded-xl ml-10 z-10 bg-white relative shadow-lg">
+            <div class="font-bold text-sm">16:30</div>
+            <div>Believing Is The Absence Of Doubt</div>
+            <div class="w-4 h-4 rounded-full bg-[#D3D6E0] absolute -left-10 top-[45%]"></div>
+            <div class="w-1 h-36 rounded-full bg-[#D3D6E0] absolute -left-[14%] top-[47%]"></div>
+        </div>
+        <div class="p-6 w-3/5 rounded-xl ml-10 z-10 bg-white relative shadow-lg">
+            <div class="font-bold text-sm">16:30</div>
+            <div>Believing Is The Absence Of Doubt</div>
+            <div class="w-4 h-4 rounded-full bg-[#D3D6E0] absolute -left-10 top-[45%]"></div>
+            <div class="w-1 h-32 rounded-full bg-[#D3D6E0] absolute -left-[14%] top-[47%]"></div>
+        </div>
+
+        <button class="font-bold border-2 border-[#D3D6E0] px-16 py-4 mt-20 mb-10">Show all updates</button>
+    </div>
+
+</body>
+
+</html>
