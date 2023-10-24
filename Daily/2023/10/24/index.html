@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#EDF0FA] flex flex-col justify-center items-center min-h-screen relative">
+    <!-- <div class="absolute flex gap-6 z-20 top-0 right-0">
+        <div class="invisible 2xl:visible">2XL</div>
+        <div class="invisible xl:visible">XL</div>
+        <div class="invisible lg:visible">LG</div>
+        <div class="invisible md:visible">MD</div>
+        <div class="invisible sm:visible">SM</div>
+        <div>NONE</div>
+    </div> -->
+
+    <div class="w-full max-w-sm shadow-2xl">
+        <div class="bg-[#ED8F8F] flex items-center justify-between p-4 text-white rounded-t-lg">
+            <h4>Send us a message</h4>
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="bg-white flex flex-col p-4 rounded-b-lg pb-20">
+            <label for="name" class="text-xs text-slate-500 font-medium">YOUR NAME</label>
+            <input type="text" name="name" id="name" placeholder="Walter" class="border-2 p-2 mb-3">
+
+            <label for="email" class="text-xs text-slate-500 font-medium">EMAIL ADDRESS</label>
+            <input type="text" name="email" id="email" placeholder="walter@email.com" class="border-2 p-2 mb-3">
+
+            <label for="message" class="text-xs text-slate-500 font-medium">WHAT CAN WE DO FOR YOU?</label>
+            <textarea name="message" id="message" rows="5" class="border-2 resize-none p-2 mb-3" placeholder="Type your message here"></textarea>
+
+            <div class="text-xs text-slate-500 font-medium">ATTACHMENTS</div>
+            <div class="w-full border-2 border-dashed flex items-center justify-center py-2 mb-5 cursor-pointer">Upload Files</div>
+
+            <button class="bg-[#ED8F8F] hover:bg-[#FC6C6C] text-white p-2">Send Message</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
