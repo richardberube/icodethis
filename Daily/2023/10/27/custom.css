@@ -1,0 +1,130 @@
+body {
+    background-color: #292240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    color: #B6BED4;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+li {
+    border: #2D2946 2px solid;
+    list-style: none;
+    display: inline-block;
+    padding: 7px;
+    
+}
+.skills {
+    padding: 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills {
+    font-size: 0.75rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #231F39;
+    width: 350px;
+    padding: 20px;
+}
+
+.container img {
+    border-radius: 100%;
+    border: #04BFCB 2px solid;
+    padding: 5px;
+    max-width: 100px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.cta button {
+    background-color: #04BFCB;
+    border: 2px solid #04BFCB;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 1em;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+#follow {
+    background-color: transparent;
+    color: #04BFCB;
+}
+/* Breakpoint helper */
+
+#breakpointHelper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    color: white;
+    z-index: 20;
+    gap: 1em;
+}
+
+#sm, #md, #lg, #xl, #twoxl{
+    visibility: hidden;
+}
+
+@media (min-width: 640px) {
+    #sm {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    #md {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1024px) {
+    #lg {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1280px) {
+    #xl {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1536px) {
+    #twoxl {
+        visibility: visible;
+    }
+}
