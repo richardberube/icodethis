@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add CSS here */
+        /* width */
+        ::-webkit-scrollbar {
+        width: 1px;
+        height: 4px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #202530;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #a6cbf6;
+        }
+    </style>
+</head>
+
+<body class="bg-[#13171E] bg-cover flex flex-col sm:flex-row gap-4 justify-center items-center min-h-screen text-[#AFCBFD]">
+    <!-- <div class="absolute flex gap-6 z-20 top-0 right-0">
+        <div class="invisible 2xl:visible">2XL</div>
+        <div class="invisible xl:visible">XL</div>
+        <div class="invisible lg:visible">LG</div>
+        <div class="invisible md:visible">MD</div>
+        <div class="invisible sm:visible">SM</div>
+        <div>NONE</div>
+    </div> -->
+
+
+    <div class="bg-[#1A1F28] w-full max-w-[300px] relative p-4 pb-16">
+        <h2 class="text-3xl font-bold">Browse</h2>
+
+        <!-- Menu -->
+        <div class="flex flex-nowrap whitespace-nowrap overflow-x-scroll gap-6">
+            <div>New Music</div>
+            <div>Playlist</div>
+            <div>Top Charts</div>
+            <div>Genre</div>
+            <!-- <h3>Genre</h3> -->
+        </div>
+
+        <!-- Album -->
+        <div class="flex overflow-x-scroll gap-6">
+            <div class="space-y-3">
+                <div class="flex justify-between items-start mt-4 w-[225px]">
+                    <div class="w-fit">
+                        <h5 class="font-medium">Queen</h5>
+                        <h4 class="text-lg font-thin leading-tight">Nicki Minaj</h4>
+                    </div>
+                    <div class="text-xs px-1 border border-red-300 rounded-full w-fit">NEW ALBUM</div>
+                </div>
+                <img src="https://picsum.photos/250/150?random=1" alt="" class="rounded-xl">
+            </div>
+            <div class="space-y-3">
+                <div class="flex justify-between items-start mt-4 w-[225px]">
+                    <div class="w-fit">
+                        <h5 class="font-medium">Queen</h5>
+                        <h4 class="text-lg font-thin leading-tight">Nicki Minaj</h4>
+                    </div>
+                    <!-- <div class="text-xs px-1 border border-red-300 rounded-full w-fit">NEW ALBUM</div> -->
+                </div>
+                <img src="https://picsum.photos/250/150?random=2" alt="" class="rounded-xl">
+            </div>
+            <div class="space-y-3">
+                <div class="flex justify-between items-start mt-4 w-[225px]">
+                    <div class="w-fit">
+                        <h5 class="font-medium">Queen</h5>
+                        <h4 class="text-lg font-thin leading-tight">Nicki Minaj</h4>
+                    </div>
+                    <!-- <div class="text-xs px-1 border border-red-300 rounded-full w-fit">NEW ALBUM</div> -->
+                </div>
+                <img src="https://picsum.photos/250/150?random=3" alt="" class="rounded-xl">
+            </div>
+
+        </div>
+
+        <!-- Hot Songs -->
+
+        <div class="mt-4">
+            <h3 class="text-xl font-medium mb-4">Hot Songs</h3>
+            
+            <div class="flex flex-col gap-4">
+                <div class="flex items-center gap-4 border-b pb-2 border-slate-700">
+                    <img src="https://picsum.photos/50?random=4" alt="" class="rounded-full">
+                    <div>
+                        <h5 class="font-medium">God's Plan</h5>
+                        <div class="text-xs">Drake</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus ml-auto" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#FF5F58" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center gap-4 border-b pb-2 border-slate-700">
+                    <img src="https://picsum.photos/50?random=5" alt="" class="rounded-full">
+                    <div>
+                        <h5 class="font-medium">God's Plan</h5>
+                        <div class="text-xs">Drake</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus ml-auto" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#FF5F58" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center gap-4 border-b pb-2 border-slate-700">
+                    <img src="https://picsum.photos/50?random=6" alt="" class="rounded-full">
+                    <div>
+                        <h5 class="font-medium">God's Plan</h5>
+                        <div class="text-xs">Drake</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus ml-auto" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#FF5F58" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </div>
+                <div class="flex items-center gap-4 border-b pb-2 border-slate-700">
+                    <img src="https://picsum.photos/50?random=7" alt="" class="rounded-full">
+                    <div>
+                        <h5 class="font-medium">God's Plan</h5>
+                        <div class="text-xs">Drake</div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus ml-auto" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#FF5F58" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Bottom Tabs -->
+        <div class="flex justify-around bg-[#20252F] absolute w-full bottom-0 left-0">
+            <div class="flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                </svg>
+                <div>Home</div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-flame" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"></path>
+                </svg>
+                <div>Trending</div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg>
+                <div>Browse</div>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-folder" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"></path>
+                </svg>
+                <div>Library</div>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+
+</html> 
