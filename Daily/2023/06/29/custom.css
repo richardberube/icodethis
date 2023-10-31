@@ -1,0 +1,170 @@
+/* Reset */
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    color: #B6BED4;
+    margin: 0px;
+    line-height: 1.25em;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.header img{
+    border-radius: 20px;
+}
+
+.container {
+    background-image: linear-gradient(180deg, #F3F4F6 300px, #FFF 300px);
+    max-width: 1200px;
+    box-shadow: 0px 0px 34px 10px rgba(204, 204, 204, 0.65);
+    padding: 100px 50px 50px 50px;
+    position: relative;
+}
+
+#header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+}
+
+#header_stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header_title {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #1A2950;
+
+}
+
+#menu {
+    margin-right: 10px;
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    min-width: 325px;
+    box-shadow: 0px 0px 20px 0px rgba(204, 204, 204, 0.65);
+    margin-top: 30px;
+}
+
+.column_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.column_body, .column_header {
+    padding: 10px 25px;
+    background-color: white;
+}
+
+#to_do {
+    background-color: #B3B6C0;
+    color: white;
+}
+
+#in_progress {
+    background-color: #5397C4;
+    color: white;
+}
+
+#done {
+    background-color: #59B785;
+    color: white;
+}
+.column_body h5 {
+    font-weight: bold;
+    color: #1A2950;
+
+}
+
+.task {
+    margin-bottom: 20px;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #EBEDF1;
+    color: #BEC0CB;
+    padding: 10px 20px;
+}
+/* Breakpoint helper */
+
+#breakpointHelper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    color: black;
+    z-index: 20;
+    gap: 1em;
+}
+
+#sm, #md, #lg, #xl, #twoxl{
+    visibility: hidden;
+}
+
+@media (min-width: 640px) {
+    #sm {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    #md {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1024px) {
+    #lg {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1280px) {
+    #xl {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1536px) {
+    #twoxl {
+        visibility: visible;
+    }
+}
