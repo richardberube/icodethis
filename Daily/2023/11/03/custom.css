@@ -1,0 +1,154 @@
+/* Reset */
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+body {
+    background-color: #27292B;
+    color: white;
+    font-size: 1.25em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+article {
+    max-width: 416px;
+    background-color: #232526;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: justify;
+    height: 225px;
+    background-color: #2F3133;
+    padding: 2em;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #FFC842;
+    font-size: 1.25em;
+    margin: 1.5rem 0px;
+}
+
+ul{
+    padding: 0px 2em;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+li::before {
+    content: "\2713";
+    padding-right: 5px;
+    color: #FFC842;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+button {
+    text-transform: uppercase;
+    padding: 20px 0px;
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+    background-color: #1C1E1F;
+    color: #FFC842;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.price_tag {
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    width: 200px;
+    rotate: 45deg;
+    color: #FFF;
+    font-size: 1.25em;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px ;
+}
+
+#starting_up {
+    background-color: #04A8F7;
+}
+
+#grow_business {
+    background-color: #AA01FF;
+}
+
+#enterprise {
+    background-color: #F30056;
+}
+
+/* Breakpoint helper */
+
+#breakpointHelper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    color: black;
+    z-index: 20;
+    gap: 1em;
+}
+
+#sm, #md, #lg, #xl, #twoxl{
+    visibility: hidden;
+}
+
+@media (min-width: 640px) {
+    #sm {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    #md {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1024px) {
+    #lg {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1280px) {
+    #xl {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 1536px) {
+    #twoxl {
+        visibility: visible;
+    }
+}
